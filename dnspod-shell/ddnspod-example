@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+
+# Import ardnspod functions
+. /root/ardnspod
+
+# Combine your token ID and token together as follows
+arToken="123456,1234561234561234561234534632413411234"
+
+# Place each domain you want to check as follows
+# you can have multiple arDdnsCheck blocks
+
+# IPv4:
+arDdnsCheck "taobao.com" "www"
+
+# IPv6:
+arDdnsCheck "taobao.com" "v6" 6
